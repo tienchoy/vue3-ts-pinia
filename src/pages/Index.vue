@@ -3,7 +3,6 @@ import { storeToRefs } from "pinia";
 import UserStore from "../store/user";
 import { useRouter } from "vue-router";
 const user = UserStore()
-const {name,age,sex} = storeToRefs(user)
 const router  = useRouter()
 
 const editUser = () => {
@@ -17,9 +16,9 @@ const editUser = () => {
 <template>
   <div>
     <h5>user info</h5>
-    <p>name:{{ name }}</p>
-    <p>sex:{{ sex }}</p>
-    <p>age:{{ age }}</p>
+    <p>name:{{ user.name }}</p>
+    <p>sex:{{ user.sex }}</p>
+    <p>age:{{ user.age }}</p>
     <hr />
     <div class="button_box">
       <button type="button" @click="editUser">edit</button>
