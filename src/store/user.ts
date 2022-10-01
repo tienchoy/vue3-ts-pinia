@@ -8,9 +8,6 @@ const UserStore = defineStore('users', {
    }),
    getters: {},
    actions: {
-      sayHi() {
-         console.log('hello,world')
-      },
       saveName(name: string) {
          this.name = name
       }
