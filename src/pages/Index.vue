@@ -12,9 +12,6 @@ const editUser = () => {
   });
   router.push('/cate')
 };
-const changename=()=>{
-  user.saveName('lisi')
-}
 </script>
                     
 <template>
@@ -26,7 +23,6 @@ const changename=()=>{
     <hr />
     <div class="button_box">
       <button type="button" @click="editUser">edit</button>
-      <button type="button" @click="changename">edit name</button>
     </div>
   </div>
 </template>

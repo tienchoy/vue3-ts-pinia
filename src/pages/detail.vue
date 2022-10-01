@@ -2,7 +2,6 @@
  import UserStore from '../store/user';
  const user = UserStore()
  const changeName=(name:string)=>{
-  console.log(user)
   user.saveName(name);
  }
 </script>
