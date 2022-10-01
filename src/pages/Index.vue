@@ -7,12 +7,9 @@ const {name,age,sex} = storeToRefs(user)
 const router  = useRouter()
 
 const editUser = () => {
-  user.name = 'zhangsan',
-  user.age = 20
-  user.sex = 'girl'
-  // user.$patch((state) => {
-  //   (state.name = "zhangsan"), (state.age = 20), (state.sex = "girl");
-  // });
+  user.$patch((state) => {
+    (state.name = "zhangsan"), (state.age = 20), (state.sex = "girl");
+  });
   router.push('/cate')
 };
 const changename=()=>{
