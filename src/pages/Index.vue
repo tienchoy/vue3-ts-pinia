@@ -5,6 +5,7 @@ import { useRouter } from "vue-router";
 const user = UserStore()
 const router  = useRouter()
 
+
 const editUser = () => {
   user.$patch((state) => {
     (state.name = "zhangsan"), (state.age = 20), (state.sex = "girl");
