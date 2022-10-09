@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+import cart from './cart.vue'
 import { storeToRefs } from "pinia";
 import UserStore from "../store/user";
 import { useRouter } from "vue-router";
@@ -24,6 +25,8 @@ const editUser = () => {
     <div class="button_box">
       <button type="button" @click="editUser">edit</button>
     </div>
+    <hr />
+    <cart />
   </div>
 </template>
     
