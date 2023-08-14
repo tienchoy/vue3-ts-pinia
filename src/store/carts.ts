@@ -7,7 +7,7 @@ const CartStore = defineStore('carts',{
     }),
     getters:{
         doubleNum(state){
-            return state.dNum = state.nums+2
+            return state.dNum = state.nums*2
         }
     },
     actions:{
